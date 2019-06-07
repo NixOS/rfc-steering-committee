@@ -1,4 +1,4 @@
-# Workflows for RFC Steering committee
+# Workflow for RFC Steering committee
 
 Rotation: Eelco, Shea, Mic, Robin, Domen
 
