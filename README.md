@@ -8,7 +8,7 @@ Rotation: [@edolstra](https://github.com/edolstra), [@Mic92](https://github.com/
 
 ## Agenda for weekly meeting
 
-- meet in hangouts (link is in the calendar event each week)
+- meet in [Jitsi Meet](https://meet.jit.si/) (link is in the calendar event each week)
 - overview of RFC statuses
 - who is leading the meeting next week?
 - is anyone going to be absent next week?
