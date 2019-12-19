@@ -1,6 +1,6 @@
 # Workflow for RFC Steering committee
 
-Rotation: Eelco, Shea, Mic, Robin, Domen
+Rotation: [@edolstra](https://github.com/edolstra), [@Mic92](https://github.com/Mic92), [@spacekookie](https://github.com/spacekookie), [@worldofpeace](https://github.com/worldofpeace), [@lheckemann](https://github.com/lheckemann)
 
 ## Before the weekly meeting
 
