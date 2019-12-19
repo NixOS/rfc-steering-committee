@@ -8,7 +8,7 @@ Rotation: Eelco, Shea, Mic, Robin, Domen
 
 ## Agenda for weekly meeting
 
-- meet at https://hangouts.google.com/hangouts/_/calendar/c2hlYUBzaGVhbGV2eS5jb20.2o26m2et1kvfgam7qgp9c9rrnc?authuser=0
+- meet in hangouts (link is in the calendar event each week)
 - overview of RFC statuses
 - who is leading the meeting next week?
 - is anyone going to be absent next week?
