@@ -11,9 +11,3 @@ Rotation of meeting leaders: [@edolstra](https://github.com/edolstra), [@Mic92](
 
 ## After meeting
 - Meeting leader puts agenda/notes in a [new issue](https://github.com/NixOS/rfc-steering-committee/issues/new)
-
-# Notes
-
-## RFC Leaders
-
-- responsible for advertizing and pushing RFC forward
