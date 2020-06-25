@@ -2,6 +2,8 @@
 
 ## General business
 
+Present in the meeting:
+
 ## [Unlabeled RFCs](https://github.com/NixOS/rfcs/pulls?q=is%3Aopen+is%3Apr+no%3Alabel) and [New RFCs](https://github.com/NixOS/rfcs/pulls?q=is%3Aopen+is%3Apr+label%3A%22status%3A+new%22+)
 
 - [ ] [RFC]()
@@ -11,6 +13,10 @@
 * [ ] [RFC]()
 
 ## [RFCs in Discussion](https://github.com/NixOS/rfcs/pulls?q=is%3Aopen+is%3Apr+label%3A"status%3A+in+discussion")
+<!-- 
+When moving an RFC into discussion ensure the shepherd team is in the RFC metadata.
+Also annotate who the team and the leader is inside this agenda.
+<!--
 
 * [ ] [RFC]()
 
