@@ -3,4 +3,4 @@
 
 set -exuo pipefail
 export CLOSED_SINCE=$(date -I -d "2 weeks ago")
-curl -f "https://api.github.com/repos/nixos/rfcs/pulls" | jq -rf ./rfc-report.jq
+curl -fsSL "https://api.github.com/repos/nixos/rfcs/pulls?per_page=100" | jq -rf ./rfc-report.jq
