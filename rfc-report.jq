@@ -11,6 +11,7 @@ def has_label(l): .labels | any(.name == l);
     { title: "Draft RFCs", items: map(select(has_label("status: draft"))) },
     { title: "Unlabelled and New RFCs", items: map(select(isempty(.labels | .[]) or has_label("status: new"))) },
     { title: "RFCs Open for Nominations", items: map(select(has_label("status: open for nominations"))) },
+    { title: "RFCs in Discussion", items: map(select(has_label("status: in discussion"))) },
     { title: "RFCs in FCP", items: map(select(has_label("status: FCP"))) },
     { title: "Accepted/Rejected/Closed", items: map(select(.closed_at > $closed_since)) }
   ]
