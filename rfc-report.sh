@@ -1,5 +1,5 @@
 #!/usr/bin/env nix-shell
-#!nix-shell -i bash -p jq gitAndTools.hub
+#!nix-shell -i bash -p jq hub
 
 set -euo pipefail
 export CLOSED_SINCE=$(date -I -d "2 weeks ago")
