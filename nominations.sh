@@ -1,5 +1,5 @@
 #!/usr/bin/env nix-shell
-#!nix-shell -i bash -p jq gitAndTools.hub
+#!nix-shell -i bash -p jq hub
 
 set -exuo pipefail
 pr="${1?usage: $0 <RFC number>}"
