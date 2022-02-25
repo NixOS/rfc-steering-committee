@@ -18,7 +18,7 @@ cat <<EOF
 ## Discussion points
 
 ## Leader of next meeting
-<!-- rotation: @edolstra, @Mic92, @spacekookie, @lheckemann, @kloenk -->
+<!-- rotation: @edolstra, @spacekookie, @lheckemann, @kevincox, @tomberek -->
 REPLACE will lead the next meeting on YYYY-MM-DD
 
 pad.mayflower.de/nixos-rfc-steering-committee
