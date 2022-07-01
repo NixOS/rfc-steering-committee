@@ -7,14 +7,14 @@ def has_label(l): .labels | any(.name == l);
   | length as $length
   | sort_by(.number)
   | [
-    { title: "Draft RFCs", items: map(select(has_label("status: draft") and .draft)) },
-    { title: "Revived RFCs", items: map(select(has_label("status: draft") and (.draft | not))) },
-    { title: "Unlabelled and New RFCs", items: map(select(isempty(.labels | .[]) or has_label("status: new"))) },
-    { title: "RFCs Open for Nominations", items: map(select(has_label("status: open for nominations"))) },
-    { title: "RFCs in Discussion", items: map(select(has_label("status: in discussion"))) },
-    { title: "RFCs in FCP", items: map(select(has_label("status: FCP"))) },
-    { title: "Accepted/Rejected/Closed", items: map(select(.closed_at > $closed_since)) }
-  ]
+    { title: "Draft RFCs", items: map(select(.draft)) }
+  ] + (map(select(.draft | not)) | [
+      { title: "Unlabelled and New RFCs", items: map(select(isempty(.labels | .[]) or has_label("status: new"))) },
+      { title: "RFCs Open for Nominations", items: map(select(has_label("status: open for nominations"))) },
+      { title: "RFCs in Discussion", items: map(select(has_label("status: in discussion"))) },
+      { title: "RFCs in FCP", items: map(select(has_label("status: FCP"))) },
+      { title: "Accepted/Rejected/Closed", items: map(select(.closed_at > $closed_since)) }
+  ])
   | map("## " + .title + "\n\n" + (.items | issue_items))
   | join("\n")
   | "<!-- " + ($length | tostring) + " PRs processed -->\n\n" + .
