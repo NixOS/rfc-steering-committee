@@ -21,5 +21,5 @@ cat <<EOF
 <!-- rotation: @edolstra, @spacekookie, @lheckemann, @kevincox, @tomberek -->
 REPLACE will lead the next meeting on YYYY-MM-DD
 
-pad.mayflower.de/nixos-rfc-steering-committee
+https://pad.mayflower.de/nixos-rfc-steering-committee
 EOF
