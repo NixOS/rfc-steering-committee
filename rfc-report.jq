@@ -1,4 +1,4 @@
-def issue_item(last_meeting): "* [ ] [RFC " + (.number | tostring) + ": " + (.title | sub("\\[(RFC)? ?[0-9]+\\]?:? *"; "")) + "](" + .html_url + ")" + if .updated_at > last_meeting then " <!-- updated since last meeting -->" else "" end;
+def issue_item(last_meeting): "* [ ] [RFC \(.number | tostring): \(.title | sub("\\[(RFC)? ?[0-9]+\\]?:? *"; ""))](\(.html_url))" + (if (.updated_at > last_meeting) then " <!-- updated since last meeting -->" else "" end);
 def issue_items(last_meeting): if isempty(.[]) then "None" else map(issue_item(last_meeting)) | join("\n") end + "\n\n";
 def has_label(l): .labels | any(.name == l);
 
