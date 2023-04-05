@@ -2,7 +2,8 @@
 #!nix-shell -i bash -p jq hub
 
 set -euo pipefail
-export CLOSED_SINCE=$(date -I -d "2 weeks ago")
+IFS= read -rp "Last meeting was (default '2 weeks ago', example '2022-12-14')? " last_meeting >&2
+export LAST_MEETING=$(date -I -d "${last_meeting:-2 weeks ago}")
 
 cat <<EOF
 ## General business
