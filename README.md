@@ -1,8 +1,7 @@
 # Workflow for RFC Steering committee
-Rotation of meeting leaders: [@edolstra](https://github.com/edolstra), [@infinisil](https://github.com/infinisil), [@lheckemann](https://github.com/lheckemann), [@kevincox](https://github.com/orgs/kevincox), [@tomberek](https://github.com/tomberek)
 
 ## Before meeting
-- Prepare a pad in [HackMD](https://hackmd.io) with the meeting agenda
+- Prepare a collaborative notepad with the meeting agenda (`rfc-report.sh` generates a template, make sure to set `GITHUB_TOKEN` for running it)
 
 ## Agenda
 - Meet in [Jitsi Meet nixos-rfc-steering-committee](https://meet.jit.si/nixos-rfc-steering-committee)
