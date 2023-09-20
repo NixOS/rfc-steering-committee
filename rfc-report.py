@@ -45,7 +45,7 @@ in_fcp = []
 in_new = []
 in_nomination = []
 
-for pull in github_api("repos/nixos/rfcs/pulls?per_page=100"):
+for pull in sorted(github_api("repos/nixos/rfcs/pulls?per_page=100"), key=lambda pull: pull["number"]):
 	state = pull["state"]
 	labels = {label["name"] for label in pull["labels"]}
 	title = pull["title"]
