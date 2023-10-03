@@ -6,6 +6,7 @@ import json
 import os
 import re
 import subprocess
+import sys
 
 if "GITHUB_TOKEN" not in os.environ:
 	print("WARNING: GITHUB_TOKEN is not set, this script will be very slow")
@@ -17,13 +18,13 @@ LABEL_IN_NOMINATION = "status: open for nominations"
 today = datetime.date.today()
 last_meeting = today - datetime.timedelta(days=14)
 try:
-	last_meeting_string = input(f"Last meeting (default {last_meeting.strftime('%a')} {last_meeting}):")
+	print(f"Last meeting (default {last_meeting.strftime('%a')} {last_meeting}): ", end='', file=sys.stderr)
+	last_meeting_string = input("")
 	if last_meeting_string:
 		year, month, day = last_meeting_string.split("-")
 		last_meeting = datetime.date(year=int(year), month=int(month), day=int(day))
-		print(f"Read last meeting as {last_meeting} ({last_meeting.strftime('%a')})")
+		print(f"Read last meeting as {last_meeting} ({last_meeting.strftime('%a')})", file=sys.stderr)
 except: pass
-print()
 
 def github_api(url):
 	p = subprocess.run([
