@@ -1,14 +1,11 @@
 #!/usr/bin/env nix-shell
-#!nix-shell -i python3 -p hub python3
+#!nix-shell -i python3 -p github-cli python3
 
 import datetime
 import json
 import os
 import re
 import subprocess
-
-if "GITHUB_TOKEN" not in os.environ:
-	print("WARNING: GITHUB_TOKEN is not set, this script will be very slow")
 
 LABEL_IN_FCP = "status: FCP"
 LABEL_IN_DISCUSSION = "status: in discussion"
@@ -27,7 +24,7 @@ print()
 
 def github_api(url):
 	p = subprocess.run([
-		"hub",
+		"gh",
 		"api",
 		"--paginate",
 		url
