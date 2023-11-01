@@ -38,7 +38,6 @@ def github_comments(pull):
 	return github_api(f"repos/nixos/rfcs/issues/{pull['number']}/comments?per_page=100")
 
 in_discussion = []
-in_draft = []
 in_fcp = []
 in_new = []
 in_nomination = []
@@ -48,7 +47,7 @@ for pull in sorted(github_api("repos/nixos/rfcs/pulls?per_page=100"), key=lambda
 	labels = {label["name"] for label in pull["labels"]}
 	title = pull["title"]
 	if pull["draft"]:
-		in_draft.append(pull)
+		continue
 	elif LABEL_IN_FCP in labels:
 		in_fcp.append(pull)
 	elif LABEL_IN_DISCUSSION in labels:
@@ -120,14 +119,6 @@ def print_nominations(pull):
 print("## General business")
 print()
 print("Present in the meeting: ")
-print()
-
-print("## Draft RFCs")
-if not in_draft:
-	print("None")
-for pull in in_draft:
-	print(f"- {rfc_link(pull)}")
-	maybe_print_labels(pull, "")
 print()
 
 print("## Unlabelled and New RFCs")
