@@ -157,5 +157,4 @@ for pull in in_fcp:
 print()
 
 print("## Leader of next meeting")
-print("<!-- rotation: @edolstra, @infinisil, @lheckemann, @tomberek, @kevincox -->")
 print(f"@TODO will lead the next meeting on {today + datetime.timedelta(days=14)}")
