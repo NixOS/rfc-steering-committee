@@ -1,7 +1,7 @@
 # Workflow for RFC Steering committee
 
 ## Before meeting
-- Prepare a collaborative notepad with the meeting agenda (`rfc-report.sh` generates a template, make sure to set `GITHUB_TOKEN` for running it)
+- Prepare a collaborative notepad with the meeting agenda (`rfc-report.py` generates a template, make sure to set `GITHUB_TOKEN` for running it)
 
 ## Agenda
 - Meet in [Jitsi Meet nixos-rfc-steering-committee](https://meet.jit.si/nixos-rfc-steering-committee)
