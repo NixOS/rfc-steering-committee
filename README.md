@@ -9,4 +9,4 @@
 - Is anyone going to be absent next meeting?
 
 ## After meeting
-- Meeting leader puts agenda/notes in a [new issue](https://github.com/NixOS/rfc-steering-committee/issues/new)
+- Meeting leader puts agenda/notes in a [Discourse post](https://discourse.nixos.org/new-topic?category=dev/rfc-steering-committee)
